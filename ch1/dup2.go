@@ -23,11 +23,14 @@ func main() {
 		}
 	}
 
+	printed := make(map[string]bool)
 	for line, appeard := range words {
 		if len(appeard) > 1 {
-			// fmt.Printf("%d\t%s\n", n, line)
 			for name := range words[line] {
-				fmt.Println(name)
+				if !printed[name] {
+					printed[name] = true
+					fmt.Println(name)
+				}
 			}
 		}
 	}
