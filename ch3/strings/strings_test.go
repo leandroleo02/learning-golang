@@ -1,6 +1,7 @@
 package sandbox
 
 import (
+	"bytes"
 	"fmt"
 	"testing"
 	"unicode/utf8"
@@ -46,6 +47,6 @@ func TestStringsEncoding(t *testing.T) {
 	}
 
 	for i, r := range "Hello, 世界" {
-    fmt.Printf("%d\t%q\t%d\n", i, r, r)
-}
+		fmt.Printf("%d\t%q\t%d\n", i, r, r)
+	}
 }

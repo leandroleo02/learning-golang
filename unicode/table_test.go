@@ -5,5 +5,5 @@ import (
 )
 
 func TestPrintUnicode(t *testing.T) {
-	PrintUnicodeTable(19990)
+	PrintUnicodeTable(19990ffffffffffffffff)
 }
